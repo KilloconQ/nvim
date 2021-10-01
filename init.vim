@@ -17,10 +17,6 @@ set modelines=0
 set ttyfast
 set wrap
 
-nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-0> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-
 set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
@@ -66,12 +62,10 @@ nnoremap <silent><leader>n :noh<cr>
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
 
  
-call plug#begin('C:\Users\ferna\AppData\Local\nvim\plugged')
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 "Themes
-Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'morhetz/gruvbox'
-
+Plug 'b4skyx/serenade'
 "Tree
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
@@ -88,6 +82,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'yggdroot/indentline'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'ryanoasis/vim-devicons'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 "Autocomplete
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
@@ -95,15 +93,20 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 
 "Status bar
-Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
-
-colorscheme gruvbox
-let g:gruvbox_contrast_dark="hard"
+if has('termguicolors')
+      set termguicolors
+    endif
+    let g:serenade_enable_italic = 1
+    let g:serenade_disable_italic_comment = 1
+    colorscheme serenade
+let g:airline_theme = 'serenade'
+let g:lightline = {'colorscheme' : 'serenade'}
 let g:deopplete#enable_at_startup=1
 let g:indentline_setColors=0
 let g:indentline_char_list=['|']
@@ -112,7 +115,7 @@ let NERDTreeQuitOnOpen=1
 
 nmap <leader>s <Plug>(easymotion-s2)
 nmap <leader>nt :NERDTreeFind<cr>
-
+nmap <leader>ft :FlutterRun<cr>
 map <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
