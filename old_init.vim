@@ -64,16 +64,24 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFE
  
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
+"Syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'norcalli/nvim-colorizer.lua'
+
+"Status bar
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
+
 "Themes
-Plug 'b4skyx/serenade'
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
+
 "Tree
 Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
 
 "Typing
-Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-surround'
 
 "IDE
 Plug 'junegunn/fzf', {'do':{ -> fzf#install() }}
