@@ -106,15 +106,8 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+colorscheme gruvbox
 let g:coc_global_extensions = [ 'coc-tsserver' ]
-if has('termguicolors')
-      set termguicolors
-    endif
-    let g:serenade_enable_italic = 1
-    let g:serenade_disable_italic_comment = 1
-    colorscheme serenade
-let g:airline_theme = 'serenade'
-let g:lightline = {'colorscheme' : 'serenade'}
 let g:deopplete#enable_at_startup=1
 let g:indentline_setColors=0
 let g:indentline_char_list=['|']
