@@ -41,8 +41,6 @@ let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
-" kite
-"let g:kite_supported_languages = ['*']
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \ ]
@@ -121,8 +119,7 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
 
     "" Set the cursor back at the saved position.  The setpos function was
     "" used here because the return value of getcurpos can be used directly
-    "" with it, unl
-ike the cursor function.
+    "" with it, unlike the cursor function.
     "call setpos('.', save_cursor)
 
     "" If the search function didn't find the pattern, it will have

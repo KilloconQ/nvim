@@ -237,3 +237,5 @@ function CheckNextParens(c)
   return a:c
 endfunction
 
+
+:imap ii <Esc>
