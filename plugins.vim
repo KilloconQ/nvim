@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
