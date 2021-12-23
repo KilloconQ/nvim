@@ -1,5 +1,6 @@
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
+
 " Lightlane
 let g:lightline = {
       \ 'active': {
@@ -41,7 +42,8 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 let g:coc_global_extensions = [
-      \ 'coc-tsserver'
+      \ 'coc-tsserver',
+      \'coc-emmet'
       \ ]
 " tmux navigator
 let g:tmux_navigator_no_mappings = 1
