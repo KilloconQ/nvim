@@ -4,7 +4,7 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 let g:lightline = {
       \ 'active': {
       \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \   'right': [['filetype', 'percent', 'lineinfo'], ['gitbranch']]
       \ },
       \ 'inactive': {
       \   'left': [['inactive'], ['relativepath']],
@@ -16,7 +16,6 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'gitbranch': 'fugitive#head',
-      \   'kitestatus': 'kite#statusline'
       \ },
       \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
