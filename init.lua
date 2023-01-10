@@ -1,0 +1,2 @@
+require('killoconq')
+print('hela')
