@@ -48,4 +48,12 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use('folke/zen-mode.nvim')
+
+  use 'm4xshen/autoclose.nvim'
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)

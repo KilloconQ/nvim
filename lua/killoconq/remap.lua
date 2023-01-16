@@ -15,5 +15,3 @@ vim.keymap.set('n','<leader>Q', ':q!<enter>')
 -- Exit insert mode
 vim.keymap.set('i','ii','<Esc>')
 
-vim.keymap.set('n','<leader>p',[['_dP']])
-
