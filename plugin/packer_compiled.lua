@@ -149,10 +149,14 @@ _G.packer_plugins = {
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -175,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["telescope-filedd-browser.nvim"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/telescope-filedd-browser.nvim",
+    url = "https://github.com/nvim-telescope/telescope-filedd-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

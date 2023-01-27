@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-
+  use 'nvim-telescope/telescope-file-browser.nvim'
   use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
@@ -57,5 +57,7 @@ return require('packer').startup(function(use)
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+
+  use 'kyazdani42/nvim-web-devicons'
 
 end)
