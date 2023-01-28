@@ -1,5 +1,4 @@
 require('killoconq')
-require('after.plugin.lsp')
 
 local has = vim.fn.has
 local is_mac = has 'macunix'
