@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -109,6 +114,16 @@ _G.packer_plugins = {
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["git.nvim"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/git.nvim",
+    url = "https://github.com/dinhhuy258/git.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -118,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -163,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/killoconq/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

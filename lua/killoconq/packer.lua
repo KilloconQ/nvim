@@ -64,7 +64,16 @@ return require('packer').startup(function(use)
   use 'MunifTanjim/prettier.nvim'
 
   use 'Theprimeagen/harpoon'
-
-  use 'lewis6991/gitsign.nvim'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/nvim-cmp'
+  use { 'numToStr/Comment.nvim',
+      requires = {
+        'JoosepAlviste/nvim-ts-context-commentstring'
+      }
+    }
+  use 'lewis6991/gitsigns.nvim'
+  use 'dinhhuy258/git.nvim'
+  use 'onsails/lspkind-nvim'
 
 end)
