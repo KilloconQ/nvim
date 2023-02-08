@@ -60,4 +60,11 @@ return require('packer').startup(function(use)
 
   use 'kyazdani42/nvim-web-devicons'
 
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
+
+  use 'Theprimeagen/harpoon'
+
+  use 'lewis6991/gitsign.nvim'
+
 end)
