@@ -1,6 +1,6 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine"
-	vim.cmd.colorscheme(color)
+	--Lua:
+  vim.cmd[[colorscheme nord]]
 
 end
 
