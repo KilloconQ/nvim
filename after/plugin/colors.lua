@@ -1,6 +1,6 @@
 function ColorMyPencils(color)
 	--Lua:
-  vim.cmd[[colorscheme nord]]
+  vim.cmd("colorscheme onedark")
 
 end
 
