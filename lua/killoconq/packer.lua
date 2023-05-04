@@ -14,13 +14,6 @@ return require('packer').startup(function(use)
   }
   use 'nvim-telescope/telescope-file-browser.nvim'
 
- --- use({
- ---   'rose-pine/neovim',
- ---   as = 'rose-pine',
- ---   config = function()
- --- 	  vim.cmd('colorscheme rose-pine')
- ---   end
- --- })
 -- If you are using Packer
   use 'MunifTanjim/prettier.nvim'
   use "olimorris/onedarkpro.nvim"
