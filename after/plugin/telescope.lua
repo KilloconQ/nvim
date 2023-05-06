@@ -15,6 +15,13 @@ telescope.setup {
         ["q"] = actions.close
       },
     },
+    file_ignore_patterns = {},
+    file_sorter = require('telescope.sorters').get_fuzzy_file,
+    file_previewer = require('telescope.previewers').vim_buffer_cat.new,
+    grep_previewer = require('telescope.previewers').vim_buffer_vimgrep.new,
+    qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
+    -- Agrega esta l’nea para mostrar archivos ocultos en todas las acciones de bœsqueda de archivos
+    hidden = true,
   },
   extensions = {
     file_browser = {
@@ -37,11 +44,6 @@ telescope.setup {
       },
     },
   },
-  pickers = {
-    find_files = {
-      hidden = true
-    }
-  }
 }
 
 telescope.load_extension("file_browser")

@@ -4,7 +4,7 @@ if (not status) then return end
 comment.setup {
   pre_hook = function(ctx)
     -- Only calculate commentstring for tsx filetypes
-    if vim.bo.filetype == 'typescriptreact' then
+    if vim.bo.filetype == 'typescriptreact' or vim.bo.filetype == 'javascriptreact' then
       local U = require('Comment.utils')
 
       -- Determine whether to use linewise or blockwise commentstring
@@ -25,3 +25,7 @@ comment.setup {
     end
   end,
 }
+
+if comment.types then
+  comment.types.typescriptreact.block = { left = '{/*', right = '*/}'}
+end
