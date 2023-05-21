@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
 
 -- If you are using Packer
   use 'MunifTanjim/prettier.nvim'
-  use "olimorris/onedarkpro.nvim"
+  -- use "olimorris/onedarkpro.nvim"
   use 'shaunsingh/nord.nvim'
   use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
   use('nvim-treesitter/playground')
